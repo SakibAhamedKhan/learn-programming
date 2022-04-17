@@ -1,14 +1,15 @@
 import React from 'react';
 import './Banner.css'
-import banner from '../../../image/Banner/banner1.jpg';
 
 const Banner = () => {
 	return (
 		<div className='banner'>
-			<img className='w-100'  src={banner} alt="" srcset="" />
-			<div className='banner-title'>
-				<h2>Welcome to Learn Programming</h2>
-				<p>A online plateform Where you can learn programming and grow your programming skill next level</p>
+			<div className='banner-title w-75'>
+				<h1 className='text-center fw-bold'>Welcome to Learn Programming</h1>
+				<p className='text-center text-light my-3'>A online plateform Where you can learn programming and grow your programming skill next level</p>
+				<div className='d-flex justify-content-center align-item-center'>
+					<button className='btn btn-warning nav-btn mt-3 py-2 px-4'>Register Now</button>
+				</div>
 			</div>
 		</div>
 	);

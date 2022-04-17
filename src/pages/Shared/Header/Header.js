@@ -6,7 +6,7 @@ import './Header.css'
 const Header = () => {
 	return (
 		<div>
-			<Navbar className='py-2' collapseOnSelect expand="lg" bg="light" variant="light">
+			<Navbar className='py-2' collapseOnSelect expand="lg" fixed='top' bg="light" variant="light">
 				<Container>
 				<Navbar.Brand href="#home" className='fw-bold'>Learn Programming</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
