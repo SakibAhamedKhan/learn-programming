@@ -1,0 +1,22 @@
+.course{
+	width: 350px;
+	/* padding: 30px 20px; */
+	background-color: rgb(244, 245, 250);
+	transition: all 0.5s ease-in-out;
+}
+.course img{
+	width: 100%;
+}
+.course:hover{
+
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.course-info{
+	height: 320px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+

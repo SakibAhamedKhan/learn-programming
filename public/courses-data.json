@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"name": "C Programming for Beginners - The Basics",
+		"price": 17.99,
+		"image": "https://i.ibb.co/ZzQBDp4/c-photo.png",
+		"description": "Understand the Basics of Programming with C. Learn C core programming concepts like Datatypes, Variables, Statements, Operators etc"
+	},
+	{
+		"id": 2,
+		"name": "C++: From Beginner to Expert",
+		"price": 13.99,
+		"image": "https://i.ibb.co/nr3qTHN/c-photo.png",
+		"description": "Designed for people who don't have any knowledge about the programming and want to program in C++"
+	},
+	{
+		"id": 3,
+		"name": "JavaScript Algorithms and Data Structures Masterclass",
+		"price": 28.99,
+		"image": "https://i.ibb.co/svH70m6/js-photo.png",
+		"description": "The Missing Computer Science and Coding Interview Bootcamp. Learn everything you need to ace difficult coding interviews"
+	},
+	{
+		"id": 4,
+		"name": "The Complete Java Certification Course",
+		"price": 36.99,
+		"image": "https://i.ibb.co/nzr0J5H/java-photo.png",
+		"description": "Become a confident industry ready core Java developer and get certified as a Java professional!"
+	},
+	{
+		"id": 5,
+		"name": "PHP for Beginners",
+		"price": 16.99,
+		"image": "https://i.ibb.co/x6RcSrc/php-photo.png",
+		"description": "Build a Content Management System from Scratch with PHP and MySQL"
+	},
+	{
+		"id": 6,
+		"name": "Learn Python Programming Masterclass",
+		"price": 9.99,
+		"image": "https://i.ibb.co/wMCyvTK/python-photo.png",
+		"description": "This Python For Beginners Course Teaches You The Python Language Fast. Includes Python Online Training With Python 3"
+	}
+]
