@@ -17,9 +17,9 @@ const Header = () => {
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className='ms-auto'>
-						<Nav.Link as={Link} to="/home" className='text-center'>Home</Nav.Link>
-						<Nav.Link as={Link} to="/blogs" className='text-center'>Blogs</Nav.Link>
-						<Nav.Link as={Link} to="/about" className='text-center'>About</Nav.Link>
+						<Nav.Link as={Link} to="/home" className='text-center menu-item'>Home</Nav.Link>
+						<Nav.Link as={Link} to="/blogs" className='text-center menu-item'>Blogs</Nav.Link>
+						<Nav.Link as={Link} to="/about" className='text-center menu-item'>About</Nav.Link>
 						<div className='d-flex justify-content-center align-items-center'>
 							<button onClick={handleLoginBtn} className='btn btn-warning nav-btn px-3 ms-lg-4 ms-2 w-lg-100 my-lg-0 my-2'>Login</button>
 						</div>

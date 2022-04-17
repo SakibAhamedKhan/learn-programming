@@ -8,7 +8,6 @@ import Login from './pages/LoginSignup/Login/Login';
 import Signup from './pages/LoginSignup/Signup/Signup';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
-import Loading from './pages/Shared/Loading/Loading';
 
 function App() {
   return (
