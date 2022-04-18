@@ -16,9 +16,9 @@ const Courses = () => {
 
 	return (
 		<div className='container my-5' id='courses'>
-			<h2 className='fs-5 ' >My Course</h2>
-			<div style={{height:'3px', width:'40px'}} className='bg-warning fw-bold'></div>
-			<h1 className='my-3'>Featured Courses</h1>
+			<h2 className='fs-5 text-center' >My Course</h2>
+			<div style={{height:'3px', width:'40px'}} className='bg-warning fw-bold mx-auto'></div>
+			<h1 className='my-3 text-center'>Featured Courses</h1>
 			{
 				(course.length===0)?
 				<Loading></Loading>
