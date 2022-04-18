@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FloatingLabel, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import './Login.css';
@@ -22,10 +22,11 @@ const Login = () => {
 	const [sendPasswordResetEmail, sending, resetError] = useSendPasswordResetEmail(
 		auth
 	  );
-
-	  
+	const location = useLocation();
+	const from = location.state?.from.pathname || '/';
+	
 	if(user){
-		navigate('/home');
+		navigate(from, {replace:true});
 	}
 
 	
@@ -46,7 +47,7 @@ const Login = () => {
 	const handleResetPassword = () => {
 		errorElement = '';
 		if(emailForReset.length === 0){
-			alert('At first Fill the Email Field')
+			toast('At first fill the email field')
 		} else{
 			toast("Password reset mail sended");
 			sendPasswordResetEmail(emailForReset);

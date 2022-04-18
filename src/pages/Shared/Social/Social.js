@@ -3,7 +3,7 @@ import './Social.css'
 import {FcGoogle} from 'react-icons/fc';
 import auth from '../../../firebase.init';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Social = () => {
 	const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
@@ -11,8 +11,10 @@ const Social = () => {
 		signInWithGoogle();
 	}
 	const navigate = useNavigate();
+	const location = useLocation();
+	const from = location.state?.from.pathname || '/';
 	if(user){
-		navigate('/home');
+		navigate(from, {replace:true});
 	}
 	return (
 		<div>

@@ -11,7 +11,7 @@
 	height: 55px;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:500px){
 	.login-container input , .login-btn {
 		width: 280px;
 	}
@@ -25,13 +25,13 @@
 }
 @media screen and (max-width:320px){
 	.login-container input , .login-btn {
-		width: 240px;
+		width: 220px;
 	}
 	
 }
 @media screen and (max-width:300px){
 	.login-container input , .login-btn  {
-		width: 220px;
+		width: 210px;
 	}
 	
 }

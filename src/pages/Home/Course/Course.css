@@ -20,3 +20,28 @@
 	justify-content: space-between;
 }
 
+@media screen and (max-width: 900px) {
+	.course{
+		width: 300px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.course{
+		width: 350px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.course{
+		width: 300px;
+	}
+}
+@media screen and (max-width: 350px) {
+	.course{
+		width: 270px;
+	}
+}
+@media screen and (max-width: 310px) {
+	.course{
+		width: 250px;
+	}
+}

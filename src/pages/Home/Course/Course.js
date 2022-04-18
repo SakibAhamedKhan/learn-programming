@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Course.css'
 
 const Course = ({data}) => {
 	const {id, name, image, price, description} = data;
+	const navigate = useNavigate();
+
+	const handleNavigateCheckout = () => {
+		navigate(`/course/${id}`);
+	}
 	return (
 		<div className='course'>
 			<div>
@@ -16,7 +22,7 @@ const Course = ({data}) => {
 				</div>
 				<div>
 					<p className=''>Price: ${price}</p>
-					<button className='btn btn-warning nav-btn enroll-btn w-100 py-3'>Enroll Now</button>
+					<button onClick={handleNavigateCheckout} className='btn btn-warning nav-btn enroll-btn w-100 py-3'>Enroll Now</button>
 				</div>
 			</div>
 			
