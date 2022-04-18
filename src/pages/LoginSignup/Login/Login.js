@@ -7,6 +7,7 @@ import Loading from '../../Shared/Loading/Loading';
 import './Login.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Social from '../../Shared/Social/Social';
 
 const Login = () => {
 	const [
@@ -21,6 +22,12 @@ const Login = () => {
 	const [sendPasswordResetEmail, sending, resetError] = useSendPasswordResetEmail(
 		auth
 	  );
+
+	  
+	if(user){
+		navigate('/home');
+	}
+
 	
 	let errorElement ;
  	if(loading){
@@ -31,10 +38,7 @@ const Login = () => {
 			 <p className='text-danger mt-2'>Error: {error?.message}{resetError?.message}</p>
 		 </div>
 	}
-	if(user){
-		navigate('/home');
-	}
-
+	
 	const handleEmail = (event) => {
 		setEmailForReset(event.target.value);
 	}
@@ -79,8 +83,10 @@ const Login = () => {
 					<button className='btn btn-warning nav-btn login-btn py-3'>Login</button>
 				</form>
 				<p className='my-3 text-center'>New in Learn Programming? <Link to='/signup' style={{cursor:'pointer', textDecoration:'none'}} className='text-primary'>signup now</Link></p>
-				
+				<Social></Social>
 			</div>
+			
+			
 			<ToastContainer />
 		</div>
 	);

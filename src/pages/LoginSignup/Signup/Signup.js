@@ -5,6 +5,7 @@ import auth from '../../../firebase.init';
 import './Signup.css';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import Loading from '../../Shared/Loading/Loading';
+import Social from '../../Shared/Social/Social';
 
 
 
@@ -20,17 +21,20 @@ const Signup = () => {
 	  const [updateProfile, updating, updateProfileError] = useUpdateProfile(auth);
 	  const navigate = useNavigate();
 	  let errorElement;
-	  if(createEmailError || updateProfileError){
-		 errorElement = <div>
-			 <p className='text-danger'>Error: {createEmailError?.message} {updateProfileError?.message}</p>
-		 </div>
-	  }
-	  if(loading || updating){
-		  return <Loading></Loading>;
-	  }
-	  if(user){
-		  navigate('/home');
-	  }
+	  
+	
+	if(createEmailError || updateProfileError){
+		errorElement = <div>
+			<p className='text-danger'>Error: {createEmailError?.message} {updateProfileError?.message}</p>
+		</div>
+	}
+	
+	if(loading || updating){
+		return <Loading></Loading>;
+	}
+	if(user){
+		navigate('/home');
+	}
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		errorElement = '';
@@ -86,7 +90,7 @@ const Signup = () => {
 					<button className='btn btn-warning nav-btn login-btn py-3'>Signup</button>
 				</form>
 				<p className='my-3 text-center'>Already have account? <Link to='/login' style={{cursor:'pointer', textDecoration:'none'}} className='text-primary'>login now</Link></p>
-				
+				<Social></Social>
 			</div>
 			
 		</div>
