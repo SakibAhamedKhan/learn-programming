@@ -1,8 +1,8 @@
 # Learn Programming
 
-My project [Live Link](https://learn-programming-7cd6b.web.app/home)
+My project [Live Link](https://learn-programming-7cd6b.web.app/)
 
-[https://learn-programming-7cd6b.web.app/home](https://learn-programming-7cd6b.web.app/home)
+[https://learn-programming-7cd6b.web.app/](https://learn-programming-7cd6b.web.app/)
 
 ## My Application page
 * Home
