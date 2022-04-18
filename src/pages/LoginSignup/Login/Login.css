@@ -10,27 +10,39 @@
 	height: 55px;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:550px){
 	.login-container input , .login-btn {
 		width: 280px;
 	}
 	
 }
-@media screen and (max-width:350px){
+@media screen and (max-width:450px){
 	.login-container input , .login-btn {
 		width: 260px;
 	}
 	
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:400px){
+	.login-container input , .login-btn {
+		width: 240px;
+	}
+	
+}
+@media screen and (max-width:350px){
 	.login-container input , .login-btn {
 		width: 220px;
 	}
 	
 }
+@media screen and (max-width:320px){
+	.login-container input , .login-btn {
+		width: 200px;
+	}
+	
+}
 @media screen and (max-width:300px){
 	.login-container input , .login-btn  {
-		width: 210px;
+		width: 180px;
 	}
 	
 }

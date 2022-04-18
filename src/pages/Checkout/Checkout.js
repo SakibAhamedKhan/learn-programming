@@ -25,9 +25,6 @@ const Checkout = () => {
 	
 	const handleSubmitCheckout = (event) =>{
 		event.preventDefault();
-		// return <div className='vh-100 d-flex justify-content-center align-items-center'>
-		// 	<h2>Thanks for Enroll the Couse ({final?.name})</h2>
-		// </div>;
 		navigate('/thanks');
 	}
 	return (
@@ -35,7 +32,7 @@ const Checkout = () => {
 			{
 				final ?
 				<div className='checkout'>
-					<div>
+					<div className='login-container checkout-field'>
 						<h4 className=''>Course: {final?.name}</h4>
 						<p className='my-3'>Price: ${final?.price}</p>
 						<form onSubmit={handleSubmitCheckout}>
@@ -63,11 +60,11 @@ const Checkout = () => {
 							<FloatingLabel controlId="floatingInput" label="Phone Number">
 								<Form.Control type="text" placeholder="phone number" required name='phone' />
 							</FloatingLabel>
-							<button className='btn btn-warning nav-btn login-btn py-3 my-3'>Checkout Enroll</button>
+							<button className='btn btn-warning nav-btn login-btn  py-3 my-3'>Checkout Enroll</button>
 						</form>
 					</div>
-					<div>
-
+					<div className='checkout-img'>
+						<img height={450} src={final?.image} alt="" />
 					</div>
 				</div>
 				:
